@@ -16,9 +16,11 @@ app.get("/", (req, res) => {
 });
 
 app.use("/posts", postRoutes);
+const mongoDB =
+  "mongodb+srv://admin:aa123456@cluster0.qgmjq.mongodb.net/AstonVisit";
 
 const CONNECTION_URL =
-  "mongodb+srv://admin:aa123456@cluster0.qgmjq.mongodb.net/AstonVisit";
+  "mongodb+srv://sam:aa123456@cluster0.1xoi9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
 
 mongoose
